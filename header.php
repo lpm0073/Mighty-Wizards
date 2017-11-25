@@ -68,4 +68,4 @@
 					</nav>
 					<!-- End Navigation panel -->
 
-	</body>
+	
