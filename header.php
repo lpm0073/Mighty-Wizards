@@ -12,7 +12,7 @@
 		<meta name="author" content="">
 
 		<!-- Favicons -->
-		<link rel="shortcut icon" href="images/favicon.png">
+		<link rel="shortcut icon" href="/wp-content/uploads/favicon.png">
 
 		<!-- CSS -->
 		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/bootstrap.min.css">
@@ -65,7 +65,7 @@
 									<!-- Logo ( * your text or image into link tag *) -->
 
 											<a href="index.html" class="logo">
-													<img src="images/logo-white.png" alt="" />
+													<img src="/wp-content/uploads/logo-white.png" alt="" />
 											</a>
 
 									<div class="mobile-nav">
