@@ -2,7 +2,7 @@
 <html <?php language_attributes(); ?> class="no-js">
 	<head>
 		<meta charset="<?php bloginfo('charset'); ?>">
-		<title><?php wp_title(''); ?><?php if(wp_title('', false)) { echo ' :'; } ?> <?php bloginfo('name'); ?></title>
+		<title>Mighty Wizards Technologies | Your nearshore BI Partner</title>
 
 		<!-- Begin: Imported from legacy Mighty Wizards site -->
 		<meta name="description" content="We offer top-notch end-to-end solutions for your unique BI implementation in your time zone">
@@ -35,14 +35,6 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 		<?php wp_head(); ?>
-		<script>
-        // conditionizr.com
-        // configure environment tests
-        conditionizr.config({
-            assets: '<?php echo get_template_directory_uri(); ?>',
-            tests: {}
-        });
-        </script>
 
 	</head>
 
