@@ -39,19 +39,14 @@
 	<!-- Begin Legacy Mighty Wizards site -->
 	<body class="appear-animate">
 
-			<!-- Page Loader -->
 			<div class="page-loader">
 					<div class="loader">Loading...</div>
 			</div>
-			<!-- End Page Loader -->
 
-			<!-- Page Wrap -->
 			<div class="page" id="top">
 
-					<!-- Navigation panel -->
 					<nav class="main-nav dark transparent stick-fixed">
 							<div class="full-wrapper relative clearfix">
-									<!-- Logo ( * your text or image into link tag *) -->
 
 											<a href="/" class="logo">
 													<img src="/wp-content/uploads/logo-white.png" alt="" />
@@ -60,12 +55,9 @@
 									<div class="mobile-nav">
 											<i class="fa fa-bars"></i>
 									</div>
-									<!-- Main Menu -->
+
 									<div class="inner-nav desktop-nav">
 										<?php html5blank_nav(); ?>
 									</div>
 							</div>
 					</nav>
-					<!-- End Navigation panel -->
-
-	
