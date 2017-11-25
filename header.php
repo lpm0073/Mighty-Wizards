@@ -64,7 +64,7 @@
 							<div class="full-wrapper relative clearfix">
 									<!-- Logo ( * your text or image into link tag *) -->
 
-											<a href="index.html" class="logo">
+											<a href="/" class="logo">
 													<img src="/wp-content/uploads/logo-white.png" alt="" />
 											</a>
 
@@ -78,9 +78,5 @@
 							</div>
 					</nav>
 					<!-- End Navigation panel -->
-
-
-
-
 
 	</body>
