@@ -1,35 +1,24 @@
-<!-- Footer -->
 <footer class="page-section bg-gray-lighter footer">
 		<div class="container">
-
-				<!-- Footer Logo -->
 				<div class="local-scroll">
 					<a href="#top"><img src="/wp-content/uploads/logo-footer.png" /></a><br>
-						<font color="#6B7F8D">USA  +1 (571) 327-8445 | e-mail:contactus@mightywizards.com</font><br><br><br><br>
-					 <a href="http://www.conacento.mx" target="_blank">conacento</a>.
+						<font color="#6B7F8D">USA  +1 (571) 327-8445 | e-mail:contactus@mightywizards.com</font><br>
+					<span>Design: <a href="http://www.conacento.mx" target="_blank">conacento.mx</a></span> | <span>Theme: <a href="https://lawrencemcdaniel.com" target="_blank">lawrencemcdaniel.com</a>.</span>
 				</div>
-				<!-- End Footer Logo -->
-
-
 		 </div>
 
 
-		 <!-- Top Link -->
 		 <div class="local-scroll">
 				 <a href="#top" class="link-to-top"><i class="fa fa-caret-up"></i></a>
 		 </div>
-		 <!-- End Top Link -->
 
 </footer>
-<!-- End Footer -->
 
 
-</div>
-<!-- End Page Wrap (from header.php) -->
+</div> <!-- Page Wrap (from header.php) -->
 
 		<?php wp_footer(); ?>
 
-		<!-- analytics -->
 		<script>
 		(function(f,i,r,e,s,h,l){i['GoogleAnalyticsObject']=s;f[s]=f[s]||function(){
 		(f[s].q=f[s].q||[]).push(arguments)},f[s].l=1*new Date();h=i.createElement(r),
@@ -39,7 +28,6 @@
 		ga('send', 'pageview');
 		</script>
 
-		<!-- JS -->
 		<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery-1.11.2.min.js"></script>
 		<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery.easing.1.3.js"></script>
 		<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/bootstrap.min.js"></script>
