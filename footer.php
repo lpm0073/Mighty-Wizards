@@ -1,4 +1,25 @@
+<footer class="page-section footer">
+		<div class="container">
 
+				<!-- Footer Logo -->
+				<div class="local-scroll">
+						<a href="#top"><img src="/wp-content/uploads/logo-footer.png" /></a><br>
+						<font color="#6B7F8D">USA  +1 (571) 327-8445 | e-mail:contactus@mightywizards.com</font><br><br><br><br>
+					 <a href="http://www.conacento.mx" target="_blank">conacento</a>.
+				</div>
+				<!-- End Footer Logo -->
+
+
+		 </div>
+
+
+		 <!-- Top Link -->
+		 <div class="local-scroll">
+				 <a href="#top" class="link-to-top"><i class="fa fa-caret-up"></i></a>
+		 </div>
+		 <!-- End Top Link -->
+
+</footer>
 </div>
 <!-- End Page Wrap (from header.php) -->
 
