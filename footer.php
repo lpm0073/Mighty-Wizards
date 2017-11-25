@@ -1,18 +1,6 @@
-			<!-- footer -->
-			<footer class="footer" role="contentinfo">
 
-				<!-- copyright -->
-				<p class="copyright">
-					&copy; <?php echo date('Y'); ?> Copyright <?php bloginfo('name'); ?>. <?php _e('Powered by', 'html5blank'); ?>
-					<a href="//wordpress.org" title="WordPress">WordPress</a> &amp; <a href="//html5blank.com" title="HTML5 Blank">HTML5 Blank</a>.
-				</p>
-				<!-- /copyright -->
-
-			</footer>
-			<!-- /footer -->
-
-		</div>
-		<!-- /wrapper -->
+</div>
+<!-- End Page Wrap (from header.php) -->
 
 		<?php wp_footer(); ?>
 
@@ -26,5 +14,34 @@
 		ga('send', 'pageview');
 		</script>
 
+		<!-- JS -->
+		<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery-1.11.2.min.js"></script>
+		<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery.easing.1.3.js"></script>
+		<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/SmoothScroll.js"></script>
+		<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery.scrollTo.min.js"></script>
+		<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery.localScroll.min.js"></script>
+		<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery.viewport.mini.js"></script>
+		<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery.countTo.js"></script>
+		<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery.appear.js"></script>
+		<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery.sticky.js"></script>
+		<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery.parallax-1.1.3.js"></script>
+		<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery.fitvids.js"></script>
+		<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/owl.carousel.min.js"></script>
+		<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/isotope.pkgd.min.js"></script>
+		<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/imagesloaded.pkgd.min.js"></script>
+		<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery.magnific-popup.min.js"></script>
+		<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&amp;language=en"></script>
+		<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/gmap3.min.js"></script>
+		<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/wow.min.js"></script>
+		<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/masonry.pkgd.min.js"></script>
+		<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery.simple-text-rotator.min.js"></script>
+		<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/all.js"></script>
+		<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/contact-form.js"></script>
+		<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery.ajaxchimp.min.js"></script>
+		<script type="text/javascript" src="rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+		<script type="text/javascript" src="rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+		<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/rev-slider.js"></script>
+		<!--[if lt IE 10]><script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/placeholder.js"></script><![endif]-->
 	</body>
 </html>
