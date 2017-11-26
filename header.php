@@ -11,7 +11,7 @@
 		<meta charset="<?php bloginfo('charset'); ?>">
 		<meta name="description" content="We offer top-notch end-to-end solutions for your unique BI implementation in your time zone">
 		<meta name="keywords" content="BI, Nearshore, Business Intelligence, Professional Services, Mexico">
-		<meta name="author" content="Mighty Wizards">
+		<meta name="author" content="Mighty Wizards Technologies">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
 
