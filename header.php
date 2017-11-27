@@ -26,16 +26,3 @@
 				<div class="loader">Loading...</div>
 		</div>
 		<div class="page" id="top">
-				<nav class="main-nav dark transparent stick-fixed">
-					<div class="full-wrapper relative clearfix">
-						<a href="/" class="logo">
-								<img src="/wp-content/uploads/logo-white.png" alt="" />
-						</a>
-						<div class="mobile-nav">
-								<i class="fa fa-bars"></i>
-						</div>
-						<div class="inner-nav desktop-nav">
-							<?php html5blank_nav(); ?>
-						</div>
-					</div>
-				</nav>
