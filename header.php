@@ -28,7 +28,8 @@
 		 <link rel="stylesheet" href="wp-content/themes/Mighty-Wizards/css/rev-slider.css">
 		 <link rel="stylesheet" href="wp-content/themes/Mighty-Wizards/rs-plugin/css/settings.css" media="screen" />
 
-		<!-- <?php wp_head(); ?> -->
+		 <script type='text/javascript' src='https://wizards.lawrencemcdaniel.com/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+
 
 	</head>
 	<body class="appear-animate">
