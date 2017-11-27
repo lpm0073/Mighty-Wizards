@@ -202,7 +202,7 @@ function add_styles()
     wp_register_style('style-blog', get_template_directory_uri() . '/style-blog.css', array(), null, 'all');
     wp_enqueue_style('style-blog');
 
-    twentyseventeen_setup();
+    add_action( 'after_setup_theme', 'twentyseventeen_setup' );
     add_action( 'template_redirect', 'twentyseventeen_content_width', 0 );
     add_filter( 'wp_resource_hints', 'twentyseventeen_resource_hints', 10, 2 );
     add_action( 'widgets_init', 'twentyseventeen_widgets_init' );
@@ -793,7 +793,6 @@ function twentyseventeen_setup() {
 
 	add_theme_support( 'starter-content', $starter_content );
 }
-add_action( 'after_setup_theme', 'twentyseventeen_setup' );
 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
