@@ -37,7 +37,7 @@
         $(window).trigger("resize");
         init_classic_menu();
         init_fullscreen_menu();
-        init_$(".side-panel")();
+        init_$side_panel();
         init_lightbox();
         init_parallax();
         init_shortcodes();
@@ -54,7 +54,7 @@
     $(window).resize(function(){
 
         init_classic_menu_resize();
-        init_$(".side-panel")_resize()
+        init_$side_panel_resize()
         js_height_init();
 
     });
@@ -856,7 +856,7 @@ function initPageSliders(){
       })(jQuery);
     }
 
-    function init_$(".side-panel")(){
+    function init_$side_panel(){
         (function($){
             "use strict";
 
@@ -922,7 +922,7 @@ function initPageSliders(){
         })(jQuery);
     }
 
-    function init_$(".side-panel")_resize(){
+    function init_$side_panel_resize(){
         (function($){
             "use strict";
 
