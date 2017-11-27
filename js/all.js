@@ -494,17 +494,10 @@
     }
 
 
-})(jQuery); // End of use strict
-
-
-/*------------------------ jQuery section I ----------------------------*/
-
 
 /* ---------------------------------------------
  Sliders
  --------------------------------------------- */
-(function($){
-     "use strict";
     function initPageSliders(){
 
             // Fullwidth slider
@@ -735,14 +728,11 @@
             }
 
     };
-})(jQuery);
 
 
 /* ---------------------------------------------
      Fullscreen menu
    --------------------------------------------- */
-(function($){
-        "use strict";
 
         var fm_menu_wrap = $("#fullscreen-menu");
         var fm_menu_button = $(".fm-button");
