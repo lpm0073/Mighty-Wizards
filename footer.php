@@ -29,6 +29,11 @@
 		</script>
 
 		<!-- <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery-1.11.2.min.js"></script> -->
+		<script>
+		jQuery(document).ready(function($){
+		  var body = $( 'body' );
+		});
+		</script>
 		<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/jquery.easing.1.3.js"></script>
 		<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/SmoothScroll.js"></script>
