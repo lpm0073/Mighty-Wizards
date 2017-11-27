@@ -738,7 +738,8 @@ function initPageSliders(){
 /* ---------------------------------------------
      Fullscreen menu
    --------------------------------------------- */
-   jQuery(document).ready(function($){
+   (function($){
+
      var fm_menu_wrap = $("#fullscreen-menu");
      var fm_menu_button = $(".fm-button");
 
@@ -830,7 +831,7 @@ function initPageSliders(){
          });
 
      }
-   });
+   })(jQuery);
 
 
 
