@@ -18,7 +18,17 @@
 		<link rel="icon" type="image/png" href="/wp-content/uploads/favicon.png">
 		<link rel="dns-prefetch" href="//www.google-analytics.com">
 
-		<?php wp_head(); ?>
+		<link rel="stylesheet" href="wp-content/themes/Mighty-Wizards/css/bootstrap.min.css">
+		 <link rel="stylesheet" href="wp-content/themes/Mighty-Wizards/css/style.css">
+		 <link rel="stylesheet" href="wp-content/themes/Mighty-Wizards/css/style-responsive.css">
+		 <link rel="stylesheet" href="wp-content/themes/Mighty-Wizards/css/animate.min.css">
+		 <link rel="stylesheet" href="wp-content/themes/Mighty-Wizards/css/vertical-rhythm.min.css">
+		 <link rel="stylesheet" href="wp-content/themes/Mighty-Wizards/css/owl.carousel.css">
+		 <link rel="stylesheet" href="wp-content/themes/Mighty-Wizards/css/magnific-popup.css">
+		 <link rel="stylesheet" href="wp-content/themes/Mighty-Wizards/css/rev-slider.css">
+		 <link rel="stylesheet" href="wp-content/themes/Mighty-Wizards/rs-plugin/css/settings.css" media="screen" />
+
+		<!-- <?php wp_head(); ?> -->
 
 	</head>
 	<body class="appear-animate">
