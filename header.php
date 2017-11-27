@@ -17,19 +17,17 @@
 
 		<link rel="icon" type="image/png" href="/wp-content/uploads/favicon.png">
 		<link rel="dns-prefetch" href="//www.google-analytics.com">
+		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/bootstrap.min.css">
+		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/style.css">
+		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/style-responsive.css">
+		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/animate.min.css">
+		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/vertical-rhythm.min.css">
+		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/owl.carousel.css">
+		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/magnific-popup.css">
+		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/rev-slider.css">
+		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/rs-plugin/css/settings.css" media="screen" />
 
-		<link rel="stylesheet" href="wp-content/themes/Mighty-Wizards/css/bootstrap.min.css">
-		 <link rel="stylesheet" href="wp-content/themes/Mighty-Wizards/css/style.css">
-		 <link rel="stylesheet" href="wp-content/themes/Mighty-Wizards/css/style-responsive.css">
-		 <link rel="stylesheet" href="wp-content/themes/Mighty-Wizards/css/animate.min.css">
-		 <link rel="stylesheet" href="wp-content/themes/Mighty-Wizards/css/vertical-rhythm.min.css">
-		 <link rel="stylesheet" href="wp-content/themes/Mighty-Wizards/css/owl.carousel.css">
-		 <link rel="stylesheet" href="wp-content/themes/Mighty-Wizards/css/magnific-popup.css">
-		 <link rel="stylesheet" href="wp-content/themes/Mighty-Wizards/css/rev-slider.css">
-		 <link rel="stylesheet" href="wp-content/themes/Mighty-Wizards/rs-plugin/css/settings.css" media="screen" />
-
-		 <script type='text/javascript' src='https://wizards.lawrencemcdaniel.com/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
-
+		<?php wp_head(); ?>
 
 	</head>
 	<body class="appear-animate">
