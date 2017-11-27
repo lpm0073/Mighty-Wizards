@@ -122,7 +122,7 @@ function add_scripts()
    if (is_singular('post') | is_tag() | is_tax() | is_category( ) ) {
 
    } else {
-     if( !is_admin() ) {
+     if( !is_admin() & !is_page( 'blog' ) ) {
        wp_deregister_script( 'jquery' );
        wp_register_script( 'jquery', includes_url( '/js/jquery/jquery.js' ), false, NULL, true );
        wp_enqueue_script( 'jquery' );
