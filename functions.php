@@ -109,13 +109,22 @@ function html5blank_conditional_scripts()
     //if (is_page('pagenamehere')) {
     //}
 
-    wp_deregister_script( 'jquery' );
-    wp_register_script( 'jquery', includes_url( '/js/jquery/jquery.js' ), false, NULL, true );
-    wp_enqueue_script( 'jquery' );
 
-    wp_deregister_script( 'jquery-migrate' );
-    wp_register_script( 'jquery-migrate', includes_url( '/js/jquery/jquery-migrate.min.js' ), false, NULL, true );
-    wp_enqueue_script( 'jquery-migrate' );
+}
+
+function jquery_to_footer()
+{
+  /**
+   * Move jQuery to the footer.
+   * more here: https://wordpress.stackexchange.com/questions/173601/enqueue-core-jquery-in-the-footer
+   */
+   if( is_admin() ) {
+          return;
+   }
+
+    wp_scripts()->add_data( 'jquery', 'group', 1 );
+    wp_scripts()->add_data( 'jquery-core', 'group', 1 );
+    wp_scripts()->add_data( 'jquery-migrate', 'group', 1 );
 
 }
 
@@ -347,6 +356,7 @@ function html5blankcomments($comment, $args, $depth)
 // Add Actions
 add_action('init', 'html5blank_header_scripts'); // Add Custom Scripts to wp_head
 add_action('wp_print_scripts', 'html5blank_conditional_scripts'); // Add Conditional Page Scripts
+add_action('wp_enqueue_scripts', 'jquery_to_footer' ); // conditionally move jQuery scripts to footer.
 add_action('get_header', 'enable_threaded_comments'); // Enable Threaded Comments
 add_action('wp_enqueue_scripts', 'html5blank_styles'); // Add Theme Stylesheet
 add_action('init', 'register_html5_menu'); // Add HTML5 Blank Menu
