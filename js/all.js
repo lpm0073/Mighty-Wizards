@@ -738,14 +738,12 @@ function initPageSliders(){
 /* ---------------------------------------------
      Fullscreen menu
    --------------------------------------------- */
-(function($){
-       "use strict";
-
-       var fm_menu_wrap = $("#fullscreen-menu");
-       var fm_menu_button = $(".fm-button");
-
        function init_fullscreen_menu(){
+         (function($){
+                "use strict";
 
+         var fm_menu_wrap = $("#fullscreen-menu");
+         var fm_menu_button = $(".fm-button");
            fm_menu_button.click(function(){
 
                if ($(this).hasClass("animation-process")){
@@ -831,10 +829,9 @@ function initPageSliders(){
 
            });
 
+         })(jQuery);
        }
 
-
- })(jQuery);
 
 
 /* ---------------------------------------------
