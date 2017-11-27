@@ -741,7 +741,7 @@ function initPageSliders(){
 
 (function($){
        "use strict";
-       $(document).ready(function(){
+
          var fm_menu_wrap = $("#fullscreen-menu");
          var fm_menu_button = $(".fm-button");
 
@@ -807,7 +807,6 @@ function initPageSliders(){
                      }
                  }
              });
-       });
 
 })(jQuery);
 
