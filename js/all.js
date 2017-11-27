@@ -499,8 +499,6 @@
  Sliders
  --------------------------------------------- */
 function initPageSliders(){
-    (function($){
-        "use strict";
 
         // Fullwidth slider
         $(".fullwidth-slider").owlCarousel({
