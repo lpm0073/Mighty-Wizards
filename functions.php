@@ -444,11 +444,6 @@ function html5blankcomments($comment, $args, $depth)
 /*------------------------------------*\
 	Actions + Filters + ShortCodes
 \*------------------------------------*/
-/*
- * This theme styles the visual editor to resemble the theme style,
- * specifically font, colors, and column width.
- */
-add_editor_style( array( 'assets/css/editor-style.css', twentyseventeen_fonts_url() ) );
 
 // Add Actions
 add_action('wp_enqueue_scripts', 'add_scripts' ); // conditionally move jQuery scripts to footer.
