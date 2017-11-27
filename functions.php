@@ -119,9 +119,13 @@ function add_scripts()
    * more here: https://wordpress.stackexchange.com/questions/173601/enqueue-core-jquery-in-the-footer
    */
    if( !is_admin() ) {
-     wp_scripts()->add_data( 'jquery', 'group', 1 );
-     wp_scripts()->add_data( 'jquery-core', 'group', 1 );
-     wp_scripts()->add_data( 'jquery-migrate', 'group', 1 );
+     wp_deregister_script( 'jquery' );
+     wp_register_script( 'jquery', includes_url( '/js/jquery/jquery.js' ), false, NULL, true );
+     wp_enqueue_script( 'jquery' );
+
+     wp_deregister_script( 'jquery-migrate' );
+     wp_register_script( 'jquery-migrate', includes_url( '/js/jquery/jquery-migrate.min.js' ), false, NULL, true );
+     wp_enqueue_script( 'jquery-migrate' );
    }
 
    wp_register_script( 'jquery.easing', content_url( '/themes/Mighty-Wizards/js/jquery.easing.1.3.js' ), false, NULL, true );
