@@ -133,32 +133,32 @@ function add_scripts()
        wp_enqueue_script( 'jquery-migrate' );
      }
      */
-     
-     wp_register_script( 'jquery.easing', content_url( '/themes/Mighty-Wizards/js/jquery.easing.1.3.js' ), false, NULL, true );
-     wp_register_script( 'bootstrap', content_url( '/themes/Mighty-Wizards/js/bootstrap.min.js' ), false, NULL, true );
+
+     wp_register_script( 'jquery.easing', content_url( '/themes/Mighty-Wizards/js/jquery.easing.1.3.js' ), false, array('jquery'), true );
+     wp_register_script( 'bootstrap', content_url( '/themes/Mighty-Wizards/js/bootstrap.min.js' ), false, array('jquery'), true );
      wp_register_script( 'SmoothScroll', content_url( '/themes/Mighty-Wizards/js/SmoothScroll.js' ), false, NULL, true );
-     wp_register_script( 'jquery.scrollTo', content_url( '/themes/Mighty-Wizards/js/jquery.scrollTo.min.js' ), false, NULL, true );
-     wp_register_script( 'jquery.localScroll', content_url( '/themes/Mighty-Wizards/js/jquery.localScroll.min.js' ), false, NULL, true );
-     wp_register_script( 'jquery.viewport', content_url( '/themes/Mighty-Wizards/js/jquery.viewport.mini.js' ), false, NULL, true );
-     wp_register_script( 'jquery.countTo', content_url( '/themes/Mighty-Wizards/js/jquery.countTo.js' ), false, NULL, true );
-     wp_register_script( 'jquery.appear', content_url( '/themes/Mighty-Wizards/js/jquery.appear.js' ), false, NULL, true );
-     wp_register_script( 'jquery.sticky', content_url( '/themes/Mighty-Wizards/js/jquery.sticky.js' ), false, NULL, true );
-     wp_register_script( 'jquery.parallax', content_url( '/themes/Mighty-Wizards/js/jquery.parallax-1.1.3.js' ), false, NULL, true );
-     wp_register_script( 'jquery.fitvids.js', content_url( '/themes/Mighty-Wizards/js/jquery.fitvids.js' ), false, NULL, true );
+     wp_register_script( 'jquery.scrollTo', content_url( '/themes/Mighty-Wizards/js/jquery.scrollTo.min.js' ), false, array('jquery'), true );
+     wp_register_script( 'jquery.localScroll', content_url( '/themes/Mighty-Wizards/js/jquery.localScroll.min.js' ), false, array('jquery'), true );
+     wp_register_script( 'jquery.viewport', content_url( '/themes/Mighty-Wizards/js/jquery.viewport.mini.js' ), false, array('jquery'), true );
+     wp_register_script( 'jquery.countTo', content_url( '/themes/Mighty-Wizards/js/jquery.countTo.js' ), false, array('jquery'), true );
+     wp_register_script( 'jquery.appear', content_url( '/themes/Mighty-Wizards/js/jquery.appear.js' ), false, array('jquery'), true );
+     wp_register_script( 'jquery.sticky', content_url( '/themes/Mighty-Wizards/js/jquery.sticky.js' ), false, array('jquery'), true );
+     wp_register_script( 'jquery.parallax', content_url( '/themes/Mighty-Wizards/js/jquery.parallax-1.1.3.js' ), false, array('jquery'), true );
+     wp_register_script( 'jquery.fitvids.js', content_url( '/themes/Mighty-Wizards/js/jquery.fitvids.js' ), false, array('jquery'), true );
      wp_register_script( 'owl.carousel', content_url( '/themes/Mighty-Wizards/js/owl.carousel.min.js' ), false, NULL, true );
      wp_register_script( 'isotope.pkgd', content_url( '/themes/Mighty-Wizards/js/isotope.pkgd.min.js' ), false, NULL, true );
      wp_register_script( 'imagesloaded.pkgd', content_url( '/themes/Mighty-Wizards/js/imagesloaded.pkgd.min.js' ), false, NULL, true );
-     wp_register_script( 'jquery.magnific-popup', content_url( '/themes/Mighty-Wizards/js/jquery.magnific-popup.min.js' ), false, NULL, true );
+     wp_register_script( 'jquery.magnific-popup', content_url( '/themes/Mighty-Wizards/js/jquery.magnific-popup.min.js' ), false, array('jquery'), true );
      wp_register_script( 'gmap3', content_url( '/themes/Mighty-Wizards/js/gmap3.min.js' ), false, NULL, true );
      wp_register_script( 'wow', content_url( '/themes/Mighty-Wizards/js/wow.min.js' ), false, NULL, true );
      wp_register_script( 'masonry.pkgd', content_url( '/themes/Mighty-Wizards/js/masonry.pkgd.min.js' ), false, NULL, true );
-     wp_register_script( 'simple-text-rotator', content_url( '/themes/Mighty-Wizards/js/jquery.simple-text-rotator.min.js' ), false, NULL, true );
-     wp_register_script( 'all', content_url( '/themes/Mighty-Wizards/js/all.js' ), false, NULL, true );
-     wp_register_script( 'contact-form', content_url( '/themes/Mighty-Wizards/js/contact-form.js' ), false, NULL, true );
-     wp_register_script( 'jquery.ajaxchimp', content_url( '/themes/Mighty-Wizards/js/jquery.ajaxchimp.min.js' ), false, NULL, true );
-     wp_register_script( 'jquery.themepunch.tools', content_url( '/themes/Mighty-Wizards/rs-plugin/js/jquery.themepunch.tools.min.js' ), false, NULL, true );
-     wp_register_script( 'jquery.themepunch.revolution', content_url( '/themes/Mighty-Wizards/rs-plugin/js/jquery.themepunch.revolution.min.js' ), false, NULL, true );
-     wp_register_script( 'rev-slider', content_url( '/themes/Mighty-Wizards/js/rev-slider.js' ), false, NULL, true );
+     wp_register_script( 'simple-text-rotator', content_url( '/themes/Mighty-Wizards/js/jquery.simple-text-rotator.min.js' ), false, array('jquery'), true );
+     wp_register_script( 'all', content_url( '/themes/Mighty-Wizards/js/all.js' ), false, array('jquery'), true );
+     wp_register_script( 'contact-form', content_url( '/themes/Mighty-Wizards/js/contact-form.js' ), false, array('jquery'), true );
+     wp_register_script( 'jquery.ajaxchimp', content_url( '/themes/Mighty-Wizards/js/jquery.ajaxchimp.min.js' ), false, array('jquery'), true );
+     wp_register_script( 'jquery.themepunch.tools', content_url( '/themes/Mighty-Wizards/rs-plugin/js/jquery.themepunch.tools.min.js' ), false, array('jquery'), true );
+     wp_register_script( 'jquery.themepunch.revolution', content_url( '/themes/Mighty-Wizards/rs-plugin/js/jquery.themepunch.revolution.min.js' ), false, array('jquery'), true );
+     wp_register_script( 'rev-slider', content_url( '/themes/Mighty-Wizards/js/rev-slider.js' ), false, array('jquery'), true );
 
      wp_enqueue_script( 'jquery.easing' );
      wp_enqueue_script( 'bootstrap' );
