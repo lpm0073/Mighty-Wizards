@@ -134,6 +134,7 @@ function add_scripts()
      }
      */
 
+     wp_register_script( 'jquery', includes_url( '/js/jquery/jquery.js' ), false, NULL, true );
      wp_register_script( 'jquery.easing', content_url( '/themes/Mighty-Wizards/js/jquery.easing.1.3.js' ), false, array('jquery'), true );
      wp_register_script( 'bootstrap', content_url( '/themes/Mighty-Wizards/js/bootstrap.min.js' ), false, array('jquery'), true );
      wp_register_script( 'SmoothScroll', content_url( '/themes/Mighty-Wizards/js/SmoothScroll.js' ), false, NULL, true );
@@ -160,6 +161,7 @@ function add_scripts()
      wp_register_script( 'jquery.themepunch.revolution', content_url( '/themes/Mighty-Wizards/rs-plugin/js/jquery.themepunch.revolution.min.js' ), false, array('jquery'), true );
      wp_register_script( 'rev-slider', content_url( '/themes/Mighty-Wizards/js/rev-slider.js' ), false, array('jquery'), true );
 
+     wp_enqueue_script( 'jquery' );
      wp_enqueue_script( 'jquery.easing' );
      wp_enqueue_script( 'bootstrap' );
      wp_enqueue_script( 'SmoothScroll' );
