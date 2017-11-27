@@ -840,6 +840,8 @@ function initPageSliders(){
      Side panel
    --------------------------------------------- */
 
+(function($){
+
     var side_panel = $(".side-panel");
     var sp_button = $(".sp-button");
     var sp_close_button = $(".sp-close-button");
@@ -859,8 +861,6 @@ function initPageSliders(){
     }
 
     function init_side_panel(){
-        (function($){
-            "use strict";
 
             sp_button.click(function(){
 
@@ -921,12 +921,9 @@ function initPageSliders(){
 
             });
 
-        })(jQuery);
     }
 
     function init_side_panel_resize(){
-        (function($){
-            "use strict";
 
              if ($(window).width() >= 1199){
                side_panel.css({
@@ -946,8 +943,8 @@ function initPageSliders(){
                  sp_close_button.css("display", "block");
              }
 
-        })(jQuery);
     }
+  })(jQuery);
 
 /* ---------------------------------------------
  Portfolio section
