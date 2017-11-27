@@ -148,6 +148,8 @@
 
     function init_classic_menu_resize(){
 
+      console.log("init_classic_menu_resize()");
+
         // Mobile menu max height
         $(".mobile-on .desktop-nav > ul").css("max-height", $(window).height() - $(".main-nav").height() - 20 + "px");
 
@@ -164,6 +166,7 @@
 
     function init_classic_menu(){
 
+      console.log("init_classic_menu()");
 
         // Navbar sticky
 
