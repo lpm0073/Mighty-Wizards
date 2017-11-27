@@ -134,7 +134,8 @@ function add_scripts()
      }
      */
 
-     wp_register_script( 'jquery', includes_url( '/js/jquery/jquery.js' ), false, NULL, true );
+     //wp_register_script( 'jquery', includes_url( '/js/jquery/jquery.js' ), false, NULL, true );
+
      wp_register_script( 'jquery.easing', content_url( '/themes/Mighty-Wizards/js/jquery.easing.1.3.js' ), array('jquery'), null, true );
      wp_register_script( 'bootstrap', content_url( '/themes/Mighty-Wizards/js/bootstrap.min.js' ), array('jquery'), null, true );
      wp_register_script( 'SmoothScroll', content_url( '/themes/Mighty-Wizards/js/SmoothScroll.js' ), false, NULL, true );
