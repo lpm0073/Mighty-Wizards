@@ -949,44 +949,44 @@ function initPageSliders(){
 /* ---------------------------------------------
  Portfolio section
  --------------------------------------------- */
+ (function($){
+  "use strict";
 
-// Projects filtering
-var fselector = 0;
-var work_grid = $("#work-grid, #isotope");
+    // Projects filtering
+    var fselector = 0;
+    var work_grid = $("#work-grid, #isotope");
 
-function initWorkFilter(){
-    (function($){
-     "use strict";
-     var isotope_mode;
-     if (work_grid.hasClass("masonry")){
-         isotope_mode = "masonry";
-     } else{
-         isotope_mode = "fitRows"
-     }
+    function initWorkFilter(){
+         var isotope_mode;
+         if (work_grid.hasClass("masonry")){
+             isotope_mode = "masonry";
+         } else{
+             isotope_mode = "fitRows"
+         }
 
-     work_grid.imagesLoaded(function(){
-            work_grid.isotope({
-                itemSelector: '.mix',
-                layoutMode: isotope_mode,
-                filter: fselector
+         work_grid.imagesLoaded(function(){
+                work_grid.isotope({
+                    itemSelector: '.mix',
+                    layoutMode: isotope_mode,
+                    filter: fselector
+                });
             });
-        });
 
-        $(".filter").click(function(){
-            $(".filter").removeClass("active");
-            $(this).addClass("active");
-            fselector = $(this).attr('data-filter');
+            $(".filter").click(function(){
+                $(".filter").removeClass("active");
+                $(this).addClass("active");
+                fselector = $(this).attr('data-filter');
 
-            work_grid.isotope({
-                itemSelector: '.mix',
-                layoutMode: isotope_mode,
-                filter: fselector
+                work_grid.isotope({
+                    itemSelector: '.mix',
+                    layoutMode: isotope_mode,
+                    filter: fselector
+                });
+                return false;
             });
-            return false;
-        });
 
-    })(jQuery);
-}
+    }
+  })(jQuery);
 
 
 
@@ -995,14 +995,14 @@ function initWorkFilter(){
 /* ---------------------------------------------
  Height 100%
  --------------------------------------------- */
-function js_height_init(){
-    (function($){
-        $(".js-height-full").height($(window).height());
-        $(".js-height-parent").each(function(){
-            $(this).height($(this).parent().first().height());
-        });
-    })(jQuery);
-}
+ (function($){
+    function js_height_init(){
+            $(".js-height-full").height($(window).height());
+            $(".js-height-parent").each(function(){
+                $(this).height($(this).parent().first().height());
+            });
+    }
+})(jQuery);
 
 
 
@@ -1010,87 +1010,87 @@ function js_height_init(){
 /* ---------------------------------------------
  Google map
  --------------------------------------------- */
+ (function($){
 
-var gmMapDiv = $("#map-canvas");
+    var gmMapDiv = $("#map-canvas");
 
-function init_map(){
-    (function($){
+    function init_map(){
 
-        $(".map-section").click(function(){
-            $(this).toggleClass("js-active");
-            $(this).find(".mt-open").toggle();
-            $(this).find(".mt-close").toggle();
-        });
-
-
-        if (gmMapDiv.length) {
-
-            var gmCenterAddress = gmMapDiv.attr("data-address");
-            var gmMarkerAddress = gmMapDiv.attr("data-address");
-
-
-            gmMapDiv.gmap3({
-                action: "init",
-                marker: {
-                    address: gmMarkerAddress,
-                    options: {
-                        icon: "images/map-marker.png"
-                    }
-                },
-                map: {
-                    options: {
-                        zoom: 14,
-                        zoomControl: true,
-                        zoomControlOptions: {
-                            style: google.maps.ZoomControlStyle.SMALL
-                        },
-                        mapTypeControl: false,
-                        scaleControl: false,
-                        scrollwheel: false,
-                        streetViewControl: false,
-                        draggable: true,
-                        styles: [{"featureType":"water","elementType":"geometry.fill","stylers":[{"color":"#d3d3d3"}]},{"featureType":"transit","stylers":[{"color":"#808080"},{"visibility":"off"}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"visibility":"on"},{"color":"#b3b3b3"}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"road.local","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#ffffff"},{"weight":1.8}]},{"featureType":"road.local","elementType":"geometry.stroke","stylers":[{"color":"#d7d7d7"}]},{"featureType":"poi","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#ebebeb"}]},{"featureType":"administrative","elementType":"geometry","stylers":[{"color":"#a7a7a7"}]},{"featureType":"road.arterial","elementType":"geometry.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"road.arterial","elementType":"geometry.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"landscape","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#efefef"}]},{"featureType":"road","elementType":"labels.text.fill","stylers":[{"color":"#696969"}]},{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"visibility":"on"},{"color":"#737373"}]},{"featureType":"poi","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"poi","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"road.arterial","elementType":"geometry.stroke","stylers":[{"color":"#d6d6d6"}]},{"featureType":"road","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{},{"featureType":"poi","elementType":"geometry.fill","stylers":[{"color":"#dadada"}]}]
-                    }
-                }
+            $(".map-section").click(function(){
+                $(this).toggleClass("js-active");
+                $(this).find(".mt-open").toggle();
+                $(this).find(".mt-close").toggle();
             });
-        }
-    })(jQuery);
-}
+
+
+            if (gmMapDiv.length) {
+
+                var gmCenterAddress = gmMapDiv.attr("data-address");
+                var gmMarkerAddress = gmMapDiv.attr("data-address");
+
+
+                gmMapDiv.gmap3({
+                    action: "init",
+                    marker: {
+                        address: gmMarkerAddress,
+                        options: {
+                            icon: "images/map-marker.png"
+                        }
+                    },
+                    map: {
+                        options: {
+                            zoom: 14,
+                            zoomControl: true,
+                            zoomControlOptions: {
+                                style: google.maps.ZoomControlStyle.SMALL
+                            },
+                            mapTypeControl: false,
+                            scaleControl: false,
+                            scrollwheel: false,
+                            streetViewControl: false,
+                            draggable: true,
+                            styles: [{"featureType":"water","elementType":"geometry.fill","stylers":[{"color":"#d3d3d3"}]},{"featureType":"transit","stylers":[{"color":"#808080"},{"visibility":"off"}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"visibility":"on"},{"color":"#b3b3b3"}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"road.local","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#ffffff"},{"weight":1.8}]},{"featureType":"road.local","elementType":"geometry.stroke","stylers":[{"color":"#d7d7d7"}]},{"featureType":"poi","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#ebebeb"}]},{"featureType":"administrative","elementType":"geometry","stylers":[{"color":"#a7a7a7"}]},{"featureType":"road.arterial","elementType":"geometry.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"road.arterial","elementType":"geometry.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"landscape","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#efefef"}]},{"featureType":"road","elementType":"labels.text.fill","stylers":[{"color":"#696969"}]},{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"visibility":"on"},{"color":"#737373"}]},{"featureType":"poi","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"poi","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"road.arterial","elementType":"geometry.stroke","stylers":[{"color":"#d6d6d6"}]},{"featureType":"road","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{},{"featureType":"poi","elementType":"geometry.fill","stylers":[{"color":"#dadada"}]}]
+                        }
+                    }
+                });
+            }
+    }
+})(jQuery);
 
 
 /* ---------------------------------------------
  WOW animations
  --------------------------------------------- */
 
-function init_wow(){
-    (function($){
+ (function($){
+    function init_wow(){
 
-        var wow = new WOW({
-            boxClass: 'wow',
-            animateClass: 'animated',
-            offset: 90,
-            mobile: false,
-            live: true
-        });
+            var wow = new WOW({
+                boxClass: 'wow',
+                animateClass: 'animated',
+                offset: 90,
+                mobile: false,
+                live: true
+            });
 
-        if ($("body").hasClass("appear-animate")){
-           wow.init();
-        }
+            if ($("body").hasClass("appear-animate")){
+               wow.init();
+            }
 
-    })(jQuery);
-}
+    }
+})(jQuery);
 
 
 /* ---------------------------------------------
  Masonry
  --------------------------------------------- */
 
-function init_masonry(){
-    (function($){
+ (function($){
+    function init_masonry(){
 
-        $(".masonry").imagesLoaded(function(){
-            $(".masonry").masonry();
-        });
+            $(".masonry").imagesLoaded(function(){
+                $(".masonry").masonry();
+            });
 
-    })(jQuery);
-}
+    }
+})(jQuery);
