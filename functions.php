@@ -106,10 +106,16 @@ function html5blank_header_scripts()
 // Load HTML5 Blank conditional scripts
 function html5blank_conditional_scripts()
 {
-    if (is_page('pagenamehere')) {
-        wp_register_script('scriptname', get_template_directory_uri() . '/js/scriptname.js', array('jquery'), '1.0.0'); // Conditional script(s)
-        wp_enqueue_script('scriptname'); // Enqueue it!
-    }
+    //if (is_page('pagenamehere')) {
+    //}
+
+    wp_dequeue_script('jquery');
+    wp_dequeue_script('jquery-core');
+    wp_dequeue_script('jquery-migrate');
+    wp_enqueue_script('jquery', false, array(), false, true);
+    wp_enqueue_script('jquery-core', false, array(), false, true);
+    wp_enqueue_script('jquery-migrate', false, array(), false, true);
+    
 }
 
 // Load HTML5 Blank styles
