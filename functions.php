@@ -199,7 +199,7 @@ function add_styles()
 {
 
   if (is_singular('post') | is_tag() | is_tax() | is_category( ) ) {
-    wp_register_style('style-blog', get_template_directory_uri() . '/css/style-blog.css', array(), null, 'all');
+    wp_register_style('style-blog', get_template_directory_uri() . '/style-blog.css', array(), null, 'all');
     wp_enqueue_style('style-blog');
 
   }
