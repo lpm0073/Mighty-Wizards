@@ -37,7 +37,7 @@
         $(window).trigger("resize");
         init_classic_menu();
         init_fullscreen_menu();
-        init_side_panel();
+        init_$(".side-panel")();
         init_lightbox();
         init_parallax();
         init_shortcodes();
@@ -54,7 +54,7 @@
     $(window).resize(function(){
 
         init_classic_menu_resize();
-        init_side_panel_resize()
+        init_$(".side-panel")_resize()
         js_height_init();
 
     });
@@ -838,37 +838,37 @@ function initPageSliders(){
      Side panel
    --------------------------------------------- */
 
-    var side_panel = $(".side-panel");
-    var sp_button = $(".sp-button");
-    var sp_close_button = $(".sp-close-button");
-    var sp_overlay = $(".sp-overlay");
-
     function sp_panel_close(){
-        side_panel.animate({
+      (function($){
+          "use strict";
+
+        $(".side-panel").animate({
             opacity: 0,
             left: -270
         }, 500, "easeOutExpo");
-        sp_overlay.fadeOut();
+        $(".sp-overlay").fadeOut();
 
 
         if ($(".owl-carousel").lenth) {
             $(".owl-carousel").data("owlCarousel").play();
         }
+
+      })(jQuery);
     }
 
-    function init_side_panel(){
+    function init_$(".side-panel")(){
         (function($){
             "use strict";
 
-            sp_button.click(function(){
+            $(".sp-button").click(function(){
 
-                side_panel.animate({
+                $(".side-panel").animate({
                     opacity: 1,
                     left: 0
                 }, 500, "easeOutExpo");
 
                 setTimeout(function(){
-                    sp_overlay.fadeIn();
+                    $(".sp-overlay").fadeIn();
                 }, 100);
 
                 if ($(".owl-carousel").lenth) {
@@ -879,11 +879,11 @@ function initPageSliders(){
 
             });
 
-            sp_close_button.click(function(){
+            $(".sp-close-button").click(function(){
                 sp_panel_close();
                 return false;
             });
-            sp_overlay.click(function(){
+            $(".sp-overlay").click(function(){
                 sp_panel_close();
                 return false;
             });
@@ -922,26 +922,26 @@ function initPageSliders(){
         })(jQuery);
     }
 
-    function init_side_panel_resize(){
+    function init_$(".side-panel")_resize(){
         (function($){
             "use strict";
 
              if ($(window).width() >= 1199){
-               side_panel.css({
+               $(".side-panel").css({
                    opacity: 1,
                    left: 0
                });
                $(".side-panel-is-left").css("margin-left", "270px");
-               sp_button.css("display", "none");
-               sp_close_button.css("display", "none");
+               $(".sp-button").css("display", "none");
+               $(".sp-close-button").css("display", "none");
              } else {
-                 side_panel.css({
+                 $(".side-panel").css({
                      opacity: 0,
                      left: -270
                  });
                  $(".side-panel-is-left").css("margin-left", "0");
-                 sp_button.css("display", "block");
-                 sp_close_button.css("display", "block");
+                 $(".sp-button").css("display", "block");
+                 $(".sp-close-button").css("display", "block");
              }
 
         })(jQuery);
@@ -953,20 +953,19 @@ function initPageSliders(){
 
 // Projects filtering
 var fselector = 0;
-var work_grid = $("#work-grid, #isotope");
 
 function initWorkFilter(){
     (function($){
      "use strict";
      var isotope_mode;
-     if (work_grid.hasClass("masonry")){
+     if ($("#work-grid, #isotope").hasClass("masonry")){
          isotope_mode = "masonry";
      } else{
          isotope_mode = "fitRows"
      }
 
-     work_grid.imagesLoaded(function(){
-            work_grid.isotope({
+     $("#work-grid, #isotope").imagesLoaded(function(){
+            $("#work-grid, #isotope").isotope({
                 itemSelector: '.mix',
                 layoutMode: isotope_mode,
                 filter: fselector
@@ -978,7 +977,7 @@ function initWorkFilter(){
             $(this).addClass("active");
             fselector = $(this).attr('data-filter');
 
-            work_grid.isotope({
+            $("#work-grid, #isotope").isotope({
                 itemSelector: '.mix',
                 layoutMode: isotope_mode,
                 filter: fselector
@@ -1012,7 +1011,6 @@ function js_height_init(){
  Google map
  --------------------------------------------- */
 
-var gmMapDiv = $("#map-canvas");
 
 function init_map(){
     (function($){
@@ -1024,13 +1022,13 @@ function init_map(){
         });
 
 
-        if (gmMapDiv.length) {
+        if ($("#map-canvas").length) {
 
-            var gmCenterAddress = gmMapDiv.attr("data-address");
-            var gmMarkerAddress = gmMapDiv.attr("data-address");
+            var gmCenterAddress = $("#map-canvas").attr("data-address");
+            var gmMarkerAddress = $("#map-canvas").attr("data-address");
 
 
-            gmMapDiv.gmap3({
+            $("#map-canvas").gmap3({
                 action: "init",
                 marker: {
                     address: gmMarkerAddress,
