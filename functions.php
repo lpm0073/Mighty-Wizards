@@ -385,7 +385,7 @@ function html5blankcomments($comment, $args, $depth)
 \*------------------------------------*/
 
 // Add Actions
-//add_action('wp_enqueue_scripts', 'add_scripts' ); // add all js
+add_action('wp_enqueue_scripts', 'add_scripts' ); // add all js
 add_action('get_header', 'enable_threaded_comments'); // Enable Threaded Comments
 add_action('init', 'register_html5_menu'); // Add HTML5 Blank Menu
 //add_action('init', 'create_post_type_html5'); // Add our HTML5 Blank Custom Post Type
