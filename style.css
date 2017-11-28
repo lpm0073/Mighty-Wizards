@@ -16,3 +16,61 @@
     Note: this style sheet is required by Wordpress. However All Mighty Wizards CSS remains in its original legacy Files
     which are located in the theme folder /css folder.
 \*------------------------------------*/
+
+/* Blog post styling */
+
+.post article {
+  color: #333;
+  font-family: "Libre Franklin", "Helvetica Neue", helvetica, arial, sans-serif;
+  max-width: 800px;
+}
+.post a {
+
+}
+
+.post h1 {
+  font-size: 1.625rem;
+  padding-top: 0;
+  margin-bottom: 025em;
+  clear: both;
+  line-height: 1.4;
+  margin: 0 0 0.75em;
+  padding: 1.5em 0 0;
+}
+p
+
+div.comments {
+
+}
+
+img.single-featured-image-header {
+    display: block;
+    margin: auto;
+}
+
+img, video {
+    height: auto;
+    max-width: 100%;
+    border-style: none;
+}
+
+.single-featured-image-header {
+    background-color: #fafafa;
+    border-bottom: 1px solid #eee;
+}
+
+
+span.date {
+
+}
+
+span.author {
+
+}
+span.author {
+
+}
+
+span.comments {
+
+}
