@@ -97,19 +97,19 @@ function add_scripts()
    */
 
    /*
+   wp_deregister_script( 'jquery' );
+   wp_deregister_script( 'jquery-migrate' );
+
+   wp_register_script( 'jquery', includes_url( '/js/jquery/jquery.js' ), false, NULL, true );
+   wp_register_script( 'jquery-migrate', includes_url( '/js/jquery/jquery-migrate.min.js' ), array('jquery'), NULL, true );
+
+   wp_enqueue_script( 'jquery' );
+   wp_enqueue_script( 'jquery-migrate' );
+
+
    */
 
    if( !is_admin() ) {
-     wp_deregister_script( 'jquery' );
-     wp_deregister_script( 'jquery-migrate' );
-
-     wp_register_script( 'jquery', includes_url( '/js/jquery/jquery.js' ), false, NULL, true );
-     wp_register_script( 'jquery-migrate', includes_url( '/js/jquery/jquery-migrate.min.js' ), array('jquery'), NULL, true );
-
-     wp_enqueue_script( 'jquery' );
-     wp_enqueue_script( 'jquery-migrate' );
-
-
 
      wp_register_script( 'jquery.easing', content_url( '/themes/Mighty-Wizards/js/jquery.easing.1.3.js' ), array('jquery'), NULL, true );
      wp_register_script( 'bootstrap', content_url( '/themes/Mighty-Wizards/js/bootstrap.min.js' ), array('jquery'), NULL, true );
