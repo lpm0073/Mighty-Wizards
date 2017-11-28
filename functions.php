@@ -120,10 +120,9 @@ function add_scripts()
    */
    if( !is_admin() ) {
      /*
-     wp_deregister_script( 'jquery' );
-
-     wp_deregister_script( 'jquery-migrate' );
      */
+     wp_deregister_script( 'jquery' );
+     wp_deregister_script( 'jquery-migrate' );
      wp_register_script( 'jquery', includes_url( '/js/jquery/jquery.js' ), false, NULL, false );
      wp_register_script( 'jquery-migrate', includes_url( '/js/jquery/jquery-migrate.min.js' ), array('jquery'), NULL, false );
 
