@@ -112,6 +112,11 @@ function html5blank_conditional_scripts()
 
 }
 
+function insert_jquery(){
+wp_enqueue_script('jquery', false, array(), false, false);
+}
+add_filter('wp_enqueue_scripts','insert_jquery',1);
+
 function add_scripts()
 {
   /**
