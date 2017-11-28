@@ -118,13 +118,18 @@ function add_scripts()
    * Move jQuery to the footer.
    * more here: https://wordpress.stackexchange.com/questions/173601/enqueue-core-jquery-in-the-footer
    */
+   wp_deregister_script( 'jquery' );
+   wp_deregister_script( 'jquery-migrate' );
+
+   wp_register_script( 'jquery', includes_url( '/js/jquery/jquery.js' ), false, NULL, true );
+   wp_register_script( 'jquery-migrate', includes_url( '/js/jquery/jquery-migrate.min.js' ), array('jquery'), NULL, true );
+
+   wp_enqueue_script( 'jquery' );
+   wp_enqueue_script( 'jquery-migrate' );
+
    if( !is_admin() ) {
      /*
      */
-     wp_deregister_script( 'jquery' );
-     wp_deregister_script( 'jquery-migrate' );
-     wp_register_script( 'jquery', includes_url( '/js/jquery/jquery.js' ), false, NULL, true );
-     wp_register_script( 'jquery-migrate', includes_url( '/js/jquery/jquery-migrate.min.js' ), array('jquery'), NULL, true );
 
      wp_register_script( 'jquery.easing', content_url( '/themes/Mighty-Wizards/js/jquery.easing.1.3.js' ), array('jquery'), NULL, true );
      wp_register_script( 'bootstrap', content_url( '/themes/Mighty-Wizards/js/bootstrap.min.js' ), array('jquery'), NULL, true );
@@ -152,8 +157,6 @@ function add_scripts()
      wp_register_script( 'jquery.themepunch.revolution', content_url( '/themes/Mighty-Wizards/rs-plugin/js/jquery.themepunch.revolution.min.js' ), array('jquery'), NULL, true );
      wp_register_script( 'rev-slider', content_url( '/themes/Mighty-Wizards/js/rev-slider.js' ), array('jquery'), NULL, true );
 
-     wp_enqueue_script( 'jquery' );
-     wp_enqueue_script( 'jquery-migrate' );
      wp_enqueue_script( 'jquery.easing' );
      wp_enqueue_script( 'bootstrap' );
      wp_enqueue_script( 'SmoothScroll' );
@@ -409,7 +412,7 @@ function html5blankcomments($comment, $args, $depth)
 \*------------------------------------*/
 
 // Add Actions
-add_action('wp_enqueue_scripts', 'add_scripts' ); // conditionally move jQuery scripts to footer.
+add_action('wp_enqueue_scripts', 'add_scripts' ); // add all js
 add_action('init', 'html5blank_header_scripts'); // Add Custom Scripts to wp_head
 add_action('wp_print_scripts', 'html5blank_conditional_scripts'); // Add Conditional Page Scripts
 add_action('get_header', 'enable_threaded_comments'); // Enable Threaded Comments
