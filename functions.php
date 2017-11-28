@@ -118,6 +118,8 @@ function add_scripts()
    * Move jQuery to the footer.
    * more here: https://wordpress.stackexchange.com/questions/173601/enqueue-core-jquery-in-the-footer
    */
+
+   /*
    wp_deregister_script( 'jquery' );
    wp_deregister_script( 'jquery-migrate' );
 
@@ -126,10 +128,9 @@ function add_scripts()
 
    wp_enqueue_script( 'jquery' );
    wp_enqueue_script( 'jquery-migrate' );
+   */
 
    if( !is_admin() ) {
-     /*
-     */
 
      wp_register_script( 'jquery.easing', content_url( '/themes/Mighty-Wizards/js/jquery.easing.1.3.js' ), array('jquery'), NULL, true );
      wp_register_script( 'bootstrap', content_url( '/themes/Mighty-Wizards/js/bootstrap.min.js' ), array('jquery'), NULL, true );
