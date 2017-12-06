@@ -1,20 +1,3 @@
-<footer class="page-section bg-gray-lighter footer">
-		<div class="container">
-				<div class="local-scroll">
-					<a href="#top"><img src="/wp-content/uploads/logo-footer.png" /></a><br>
-						<font color="#6B7F8D">USA  +1 (571) 327-8445 | e-mail:contactus@mightywizards.com</font><br>
-					<span>Design: <a href="http://www.conacento.mx" target="_blank">conacento.mx</a></span> | <span>Theme: <a href="https://lawrencemcdaniel.com" target="_blank">lawrencemcdaniel.com</a>.</span>
-				</div>
-		 </div>
-
-
-		 <div class="local-scroll">
-				 <a href="#top" class="link-to-top"><i class="fa fa-caret-up"></i></a>
-		 </div>
-
-</footer>
-
-
 </div> <!-- Page Wrap (from header.php) -->
 
 		<script>
