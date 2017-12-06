@@ -222,7 +222,7 @@ if (function_exists('register_sidebar'))
     // Define Sidebar Widget Area 1
     register_sidebar(array(
         'name' => __('Widget Area 1', 'html5blank'),
-        'description' => __('Description for this widget-area...', 'html5blank'),
+        'description' => __('Full-width page footer area.', 'html5blank'),
         'id' => 'widget-area-1',
         'before_widget' => '<div id="%1$s" class="%2$s">',
         'after_widget' => '</div>',
@@ -233,9 +233,9 @@ if (function_exists('register_sidebar'))
     // Define Sidebar Widget Area 2
     register_sidebar(array(
         'name' => __('Widget Area 2', 'html5blank'),
-        'description' => __('Description for this widget-area...', 'html5blank'),
+        'description' => __('Blog right sidebar area -- Do not use! Not in production yet!!!', 'html5blank'),
         'id' => 'widget-area-2',
-        'before_widget' => '<div id="%1$s" class="%2$s">',
+        'before_widget' => '<div id="%1$s" class="blog-sidebar">',
         'after_widget' => '</div>',
         'before_title' => '<h3>',
         'after_title' => '</h3>'

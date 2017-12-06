@@ -4483,6 +4483,19 @@ a.blog-item-more:hover{
 
 
 
+/*
+ * McDaniel:
+   Blog Sidebar
+ */
+.blog-sidebar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 325px;
+  margin-top: 200px;
+  margin-bottom: 200px;
+}
+
 
 /*
  * Sidebar
